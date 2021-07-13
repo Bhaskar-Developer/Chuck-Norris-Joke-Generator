@@ -3,6 +3,7 @@ document.querySelector('.get-jokes').addEventListener('click', getJokes)
 
 function getJokes(e) {
   //get the number entered in the input field
+  //There is only one input field with type as number hence we grab it and also make sure that we receive a valid number as input
   const number = document.querySelector('input[type="number"]').value
   //create the XMLHTTP object for using API
   const xhr = new XMLHttpRequest()
